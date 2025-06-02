@@ -1,1 +1,162 @@
-<h1>Hola</h1>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Índice de Proyectos - GitHub</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f7f6;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            padding: 20px 0;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            color: #2c3e50;
+        }
+
+        .header h1 {
+            font-size: 2.8em;
+            margin-bottom: 10px;
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 10px;
+            display: inline-block;
+        }
+
+        .header p {
+            font-size: 1.2em;
+            color: #555;
+        }
+
+        .card {
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-decoration: none;
+            color: inherit;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+        }
+
+        .card-image {
+            width: 100%;
+            height: 180px; /* Altura fija para las imágenes */
+            object-fit: cover; /* Recorta la imagen para que cubra el área */
+            display: block;
+            border-bottom: 1px solid #eee;
+        }
+
+        .card-content {
+            padding: 20px;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .card-content h3 {
+            margin-top: 0;
+            margin-bottom: 10px;
+            color: #3498db;
+            font-size: 1.5em;
+        }
+
+        .card-content p {
+            font-size: 1em;
+            line-height: 1.6;
+            color: #666;
+            margin-bottom: 15px;
+        }
+
+        .card-link-text {
+            display: block;
+            margin-top: auto; /* Empuja el enlace hacia abajo */
+            text-align: right;
+            color: #2980b9;
+            font-weight: bold;
+            transition: color 0.2s ease;
+        }
+
+        .card-link-text:hover {
+            color: #1a5276;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                grid-template-columns: 1fr;
+            }
+            .header h1 {
+                font-size: 2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>¡Bienvenido a Mi GitHub!</h1>
+        <p>Explora mis proyectos y descubre lo que he estado construyendo.</p>
+    </header>
+
+    <main class="container">
+        <a href="https://github.com/TU_USUARIO/NOMBRE_REPOSITORIO_1" target="_blank" class="card">
+            <img src="https://via.placeholder.com/400x250/A0DAFB/FFFFFF?text=Proyecto+Web" alt="Imagen de Proyecto Web" class="card-image">
+            <div class="card-content">
+                <h3>Proyecto de Desarrollo Web</h3>
+                <p>Un proyecto interactivo desarrollado con HTML, CSS y JavaScript. Explora sus funcionalidades y diseño responsivo.</p>
+                <span class="card-link-text">Ver en GitHub &rarr;</span>
+            </div>
+        </a>
+
+        <a href="https://github.com/TU_USUARIO/NOMBRE_REPOSITORIO_2" target="_blank" class="card">
+            <img src="https://via.placeholder.com/400x250/B8E0CB/FFFFFF?text=Análisis+Datos" alt="Imagen de Análisis de Datos" class="card-image">
+            <div class="card-content">
+                <h3>Análisis de Datos con Python</h3>
+                <p>Scripts y notebooks de Jupyter para análisis de datos, visualizaciones y modelos predictivos básicos. Ideal para entender la ciencia de datos.</p>
+                <span class="card-link-text">Ver en GitHub &rarr;</span>
+            </div>
+        </a>
+
+        <a href="https://github.com/TU_USUARIO/NOMBRE_REPOSITORIO_3" target="_blank" class="card">
+            <img src="https://via.placeholder.com/400x250/FFC99A/FFFFFF?text=Aplicación+Móvil" alt="Imagen de Aplicación Móvil" class="card-image">
+            <div class="card-content">
+                <h3>Aplicación Móvil Simple</h3>
+                <p>Una pequeña aplicación móvil desarrollada en React Native, mostrando la gestión de estados y componentes reutilizables. ¡Descarga y prueba!</p>
+                <span class="card-link-text">Ver en GitHub &rarr;</span>
+            </div>
+        </a>
+
+        <a href="https://github.com/TU_USUARIO/NOMBRE_REPOSITORIO_4" target="_blank" class="card">
+            <img src="https://via.placeholder.com/400x250/C6D8FF/FFFFFF?text=Script+Automatización" alt="Imagen de Script de Automatización" class="card-image">
+            <div class="card-content">
+                <h3>Scripts de Automatización</h3>
+                <p>Colección de scripts en Bash/Python para automatizar tareas diarias y mejorar la productividad en entornos de desarrollo.</p>
+                <span class="card-link-text">Ver en GitHub &rarr;</span>
+            </div>
+        </a>
+
+    </main>
+</body>
+</html>
